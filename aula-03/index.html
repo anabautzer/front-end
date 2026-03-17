@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!-- configuração da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- exemplo de CSS externo, indicado a utilizar mais vezes, troca todas as páginas ao mesmo tempo, a manutenção do código fica simples -->
+    <link rel="stylesheet" href="css/style.css"> <!-- relativo a uma folha de style e o caminho para chegar lá, colocar css/style.css cria um atalho para o próprio programa criar uma pasta-->
+</head>
+<body>
+
+    <!-- exemplo de CSS inline --> <!-- fácil de perder a linha dentro do código, e tem ordem de prioridade, mesmo que edite em outro lugar, ele sempre receberá a mesma cor -->
+    <!-- exemplo: <h1 style="color:aquamarine">Aula de introdução ao CSS</h1> --> 
+    <!-- elemento de título, style = "color: " faz a cor --> <!-- ctrl + ; faz comentario -->
+
+    <h1>Aula de introdução ao CSS</h1>
+
+    <!-- Ordem de prioridade: 1- inline, 2- interno e 3- externo -->
+     <a href="cursos.html">Página de Cursos</a>
+     
+     <img src="img/images.jpg" alt="Pokemon" width="200px">
+
+    <!-- exemplo de CSS interno, criação de um bloco, só funciona nessa página, uso moderado -->
+    <style>
+        li{
+            color: greenyellow;
+        }
+    
+    </style>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+<!-- p*10>lorem25 número de palavras que lorem terá, ctrl + espaço para voltar o atalho-->
+<p id="primeiro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta libero nihil delectus omnis doloribus. Eum optio quibusdam harum esse? Pariatur voluptates aut animi labore.</p> <!-- id é um único lugar -->
+
+<h2>Comida</h2>
+<p>Laborum eius magni enim? Magnam aperiam delectus nemo. Dolorum sapiente, fugit est natus, unde sit laudantium nemo nisi eveniet praesentium eos dolorem? Modi, veniam fugiat.</p>
+<p>Cum, ad repudiandae itaque, totam nobis a soluta voluptas saepe accusamus adipisci commodi. Harum expedita inventore quasi ullam a maiores ut impedit voluptates odio esse?</p>
+<p>Quaerat neque exercitationem debitis illum earum nemo ducimus repellendus dignissimos perferendis inventore provident nostrum quos in, eius placeat ullam? Doloribus fugiat cupiditate ut unde ab!</p>
+<p>Exercitationem mollitia, ipsum nemo deserunt eveniet fugiat asperiores minima! Nostrum aliquam sit odit quod laudantium optio, numquam quo voluptas asperiores a sed non voluptate neque.</p>
+<p>Sed hic quos deleniti modi, voluptates vitae ratione quo amet pariatur incidunt repellat numquam. Rem similique dolore earum fuga illo sint nulla neque, tempore qui.</p>
+
+<h2>Esportes</h2>
+<p class="esporte">Accusamus labore ipsam deserunt laborum suscipit, temporibus corrupti pariatur dolorem exercitationem voluptas a esse obcaecati saepe sed inventore dolor debitis earum voluptate nostrum sint? Accusamus.</p> <!-- class é utilizada para vários elementos -->
+<p class="esporte">Expedita, sapiente pariatur autem consequuntur, eum odio illum enim recusandae praesentium optio facilis amet consectetur dolorem sit libero id, voluptatem odit minima numquam nihil dolorum!</p>
+<p class="esporte">Veritatis dignissimos dolore itaque ab maiores impedit, qui perferendis vitae ea neque esse hic facilis provident eum non dolor! Ab ex earum rem laudantium deleniti!</p>
+<p class="esporte">Harum repellat aliquam doloremque animi labore quia deleniti, porro nulla sapiente iste! Tempora pariatur placeat ullam, quos in ipsa eligendi at debitis fugiat cupiditate facere.</p>
+
+<h2>Filmes</h2>
+
+<div>
+    <p class="filme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatem, quia vitae eveniet reiciendis similique. Eaque ad molestias libero neque rerum, omnis aliquam aliquid animi.</p> <!-- p.filmes>lorem25 cria direto com a classe -->
+    <p class="filme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aspernatur inventore. Velit vero quis, voluptates cumque eum labore deserunt asperiores natus! Cum amet provident ut.</p>
+    <p class="filme">Ratione adipisci fuga deserunt sed, esse consequatur sapiente rem accusantium mollitia ab similique, quod cupiditate provident voluptate nemo dolores eveniet doloribus quis nulla obcaecati totam!</p>
+    <p class="filme">Sed quasi temporibus iure nemo totam aperiam provident maxime quas non aut itaque autem voluptatum voluptates vitae ea iste asperiores enim necessitatibus, aliquam aspernatur nulla.</p>
+</div> <!-- bloco para criar dentro da página, divisor de texto , alt + para cima faz subir o código -->
+
+
+</body>
+</html>

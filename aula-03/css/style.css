@@ -1,0 +1,38 @@
+/* fazer ordem do que está em primeiro */
+
+body {
+    background-color: blue;
+    background-image: url(../img/fundo-1.jpg); /* ../ para sair da pasta */ /* uso de tiles para dar ideia de azulejo */
+    background-repeat: no-repeat;  /* não repete a imagem de fundo */ /* repeat-x ou -y é como se fosse um gráfico */
+    background-position: center left; /* controla a posição da imagem */
+}
+
+
+
+
+p{ /* seletor de quem vai receber, bloco de código */
+    color:chocolate; /* css externo */ /* color é a propriedade e junto é um valor uso de ; para dar uma segunda caracteristica*/
+}
+
+h1{
+    color:red; /* forma classica */
+    text-align: center; /* text-align é sobre alinhamento do texto */
+}
+
+#primeiro{
+    color: cadetblue; /* uso de id para identificar o que precisa mudar, # é para id */
+}
+
+.esporte{
+    color: cornflowerblue; /* uso para classe, . é para class */
+}
+
+div{
+    background-color: orange; /* da cor no fundo */
+}
+
+/* criação de cor, original é vermelho (ff0000)  - verde (00ff00) - azul (0000ff) */
+/* hexadecimal: 0 a f que da 16 opções, sendo f a mais forte */
+.filme{
+    color: rgba(0, 255, 149, 0.5); /* transparencia #ffffff99, a transparência vai de 00 a 99*/ /* rgb vai do 0 ao 255, menos utilizado */  /* a quarta opção é a transparência, sendo de 0 a 1 */
+}
