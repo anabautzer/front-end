@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- primeira linha obrigatória, intrução do navegador como renderizar no modo padrão, qual versão do html -->
+
+<html lang="pt-br"> <!-- atributo, linguagem que estará na página -->
+<head> <!-- cabeça do arquivo, o usuario não vê, informações do site -->
+    <meta charset="UTF-8"> <!-- meta é utilizadda para meta dados, dados de configuração--> 
+    <!-- UTF-8 é utilizada para todos os caracteres da lingua português-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- tamanho da dela utilizada, 1 = tamanho dela inteiro-->
+    <title>Aula 01</title> <!-- título que fica na aba -->
+</head>
+<body> <!-- pode ou não conter um texto ou um elemento, sempre com inicio e fechamento -->
+<h1>Primeira aula de HTML</h1> <!-- título principal da página, apenas um desse na página, referência do motor de busca, são tags/etiquetas -->
+<p>Nesta aula estamos aprendendo o básico de HTML</p> <!-- parágrafos -->
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur id eaque, asperiores sapiente rem quasi ducimus repudiandae praesentium illum, eos quaerat ipsam quidem commodi? Accusantium quasi eaque neque temporibus minima.</p> <!-- alt + z para quebrar o parágrafo -->
+<!-- <br> quebra a linha dentro do texto, evitar de usar para dar espaçamento, atrapalha o projeto -->
+
+ <a href="produtos.html">Produtos para Web</a> | <!-- conhecido por navegação, se ordena na mesma linha, display inline -->
+
+ <a href="https://www.fiap.com.br" target="_blank">Site da FIAP</a> <!-- https quer dizer que o site tem sistema de proteção. target= "_blank" abre em outra aba, para outros sites fora do seu site-->
+
+ <!-- h2 é um elemento com display block, pega o bloco da linha só para ele -->
+<h2>Listas Ordenadas</h2> <!-- nivel abaixo do título, pode ir até o h6, sendo o máximo, pode repetir quantas vezes quiser, níveis diferentes de organização -->
+<ol> 
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+</ol> <!-- lista ordenada, uma lista dentro da outra -->
+<h2>Lista não ordenadas</h2>
+<img src="bg-fiap.png"  title= "Logo FIAP" alt="Logo da FIAP" width="250px"> <!--só tem abertura, não pecisa de fechamento, usar / é opcional. Local da imagem e texto alternativo, quando a imagem quebra e também quando a pessoa é def, lendo a imagem. Também é display inline -->
+
+<img src="https://www.fiap.com.br/imgs/fiap-alura/header/header.png"  title= "Logo FIAP + ALURA" alt="Logo da FIAP" width="250px"> <!-- Tem como colocar o endereço da imagem, sem precisar baixar, mas você depende do provedor da imagem. Hot link - usando outro servidor para utilizar a imagem -->
+
+<ul> <!-- apenas uma lista, sem primeiro, segundo e etc -->
+    <li>Banana</li>
+        <ul>
+            <li>Prata</li> <!-- lista -->
+            <li>Nanica</li>
+            <li>da Terra</li>
+        </ul>
+    <li>Laranja</li>
+    <li>Maçã</li>
+</ul>
+
+</body>
+</html>
