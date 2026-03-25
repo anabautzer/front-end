@@ -1,0 +1,70 @@
+/*criação de reset*/
+*{ /* seleciona todos os dados */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* content-box é o padrão, a largura vai ser configurada pelo content (conteúdo), border-box conta com os elementos totais, diminuindo o conteúdo */
+}
+.btn{
+    display: inline-block; /* display: é a forma de exibição do elemento, inline: é o padrão para elementos como a, span, strong, ele fica na mesma linha, block? é o padrão para div, p, h1, ele quebra a linha e ocupa toda a largura disponível, inline-block? é uma mistura dos dois, ele fica na mesma linha mas respeita as propriedades de largura e altura */
+    text-decoration: none; /* remove a linha do link */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: cadetblue;
+    border-radius: 5px; /* borda arredondada, o valor é o raio da curva, quanto maior o valor, mais arredondado fica */
+}
+
+.btn:hover{ /* hover é um pseudo-classe, ele é ativado quando o mouse passa por cima do elemento */
+    background-color: #333333;
+}
+
+body{
+    height: 1000px;
+}
+
+.cabecalho{
+    width: 100%; /* a largura padrão */
+    height: 150px;
+    background-color: blue;
+}
+
+.box{ /* essa classe foi criada para mexer em conjunto nas outras box, modificações em comum */
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.box1{
+    background-color: green;
+    /* position: absolute;
+    top: 50px;
+    left: 50px; */
+    float: left;
+    width: 30%;
+}
+.box2{
+    background-color: yellow;
+    /*position: absolute;*/ /* relative: ele guarda a posição original e anda, absolute: ele desprender do lugar e passa a respeitar a página, uso em logotipo, fixed: ele fica preso relativo a janela do nevegador, sticky: posicionamento relativo (guarda o local dele ate o momento que pode) e quando move a página, ele move junto */
+    /* top: 100px; */ /* desloca o elemento para baixo, em relação a sua posição original */
+    /* left: 100px; */ /* desloca o elemento para direita, em relação a sua posição original */
+    /* z-index: -1;  */ /* eixo z, controla a sobreposição dos elementos, quanto maior o número, mais para cima ele fica, o padrão é 0, os negativos ficam para baixo */
+    float: left; /* float é um tipo de posicionamento, ele tira o elemento do fluxo normal e o posiciona a direita ou a esquerda, os outros elementos vão se ajustar a ele, tem que ser usado com cuidado, pois pode causar problemas de layout, ele chega em um limite, respeitando a regra do box de cima */
+    width: 40%;
+}
+.box3{
+    background-color: red;
+    /* position: absolute;
+    top: 150px;
+    left: 150px; */
+    float: left;
+    width: 30%; /* fazer 3 width em cada box, faz a página ter três colunas*/
+}
+
+.rodape{
+    width: 100%;
+    height: 100px;
+    background-color: #222222;
+    clear: both; /* clear é usado para limpar os efeitos do float, ele impede que os elementos flutuantes anteriores afetem o posicionamento do rodapé, garantindo que ele fique abaixo das caixas flutuantes, both é para tanto para coma, quanto para baixo */
+}
+
