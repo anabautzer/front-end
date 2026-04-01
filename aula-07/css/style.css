@@ -1,0 +1,51 @@
+/* boa prática para resetar as informações */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* container é geral, ainda sobra espaço */
+.container{
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    width: 80%;
+    height: 300px;
+    display: flex; /* flex: flexivel, fazendo colunas, mas seguindo a linha */
+    flex-direction: row; /* dar a direção principal do projeto, row: é padrão, mantem em linhas, column: colunas, row-reverse: fica em linha, mas da direita para a esquerda, column-reverse: de baixo para cima  */
+    flex-wrap: nowrap; /* nowrap: não quebra os elementos, wrap: pode quebrar os elementos para caber, quebrar os elementos em linhas, wrap-reverse: quebra e troca as informações de lugar */
+    /* flex-flow: ; wrap + direction, limpa o código */
+    justify-content: start;  /* alinhamento do eixo principal, não inverte a sequência, start: comando padrão, da esquerda para direita, end: direita para a esquerda, center: centralizar. Tipo de espaços, space-around: espaço livre em torno dos elementos, space-between: espaço entre os elementos, sem espaço nas laterais, space-evenly: distribui igualmente os espaços */
+    align-items: stretch;
+    /* resolve em relação a linha, stretch: estica o elemento até ocupar o espaço todo, start: tamanho original, alinhado na parte de cima, end: alinhamento para baixo, center: alinhado ao centro, baseline: alinha os elementos pelo contéudo */
+    align-content: stretch;
+    /* stretch: cada linha oculpa o maximo que da, start: joga para cima, end: joga para baixo,, center, spaces */
+    
+}
+
+/* item é para os 3 itens */
+.item{
+    background-color: royalblue;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    width: 250px;
+    flex: 0 1 200px;  /* grow, shirink e basis na mesma linha */
+}
+
+.item1{
+    order: 1; /* ordem das informações */
+    /* flex-grow: 1; */ /* o quanto que o elemento pegue de espaço disponivel, se estiver sobrando */
+    /* flex-shrink: 1;  */ /* valor inicial é 1, todos diminuiem, menos esse item */
+    /* flex-basis: 300px;  */ /* define a largura básica do elemento */
+    align-self: center; /* so mexe nesse elemento */
+}
+
+.item2{
+    /* padding-top: ; /* aumenta o espaçamento interno, nessa caso no topo } */
+}
+
+.item3{
+    order: -1; /* pode ter valor negativo */
+    /* flex-grow: 2; */
+}
