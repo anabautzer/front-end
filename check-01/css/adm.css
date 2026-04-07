@@ -1,0 +1,92 @@
+/* CSS para a página de adm */
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url(../img/fundo8.jpg);
+}
+
+.logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.nome{
+    background-color: rgba(255, 255, 255, 0.785);
+    border: 5px double black;
+    padding: 15px 10px;
+    width: 400px;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.primeiro{
+    background-color: rgba(255, 255, 255, 0.785);
+    border: 5px double black;
+    padding: 10px 10px;
+    width: 200px;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texto1{
+    background-color: rgba(255, 255, 255, 0.785);
+    border: 5px double black;
+    padding: 10px 10px;
+    text-align: justify;
+    text-indent: 20px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: 100;
+}
+
+.segundo{
+    background-color: rgba(255, 255, 255, 0.785);
+    border: 5px double black;
+    padding: 10px 10px;
+    width: 450px;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texto2{
+    background-color: rgba(255, 255, 255, 0.785);
+    border: 5px double black;
+    padding: 10px;
+    margin-left: 0;
+    padding-left: 40px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: 100;
+}
+
+.pag{
+    background-color: rgba(255, 255, 255, 0.785);
+    border: 5px double black;
+    padding: 10px;
+    width: 27%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: 100;
+}
