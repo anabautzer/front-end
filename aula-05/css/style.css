@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    height: 800px;
+}
+.teste1{ /* é como se fosse uma box */
+    font-family: Arial, Helvetica, sans-serif; /* sans-serif é sem detalhes nas letras */
+    background-color: lightcoral;
+    width: 500px; /* quando é %, ele se redimenciona com o tamanho da página*/
+    border: 2px solid black; /* largura, tipo (inteira) e cor, esse é o tipo resumido */
+    border-width: 2px 4px 6px 8px; /* pode atribuir uma largura para cada lado (sentido horário), 1 valor ou 2 valores (usual) */
+    border-style: dotted dashed double groove; /* mesmo estilo do sublinhado */
+    border-color: red blue green orange;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px; /* suavizar os cantos das caixas */
+    box-shadow: 5px 8px 1px yellow; /* distância na horizontal, na vertical, a distorção (nitida ou sombreada) e cor, aceita o negativo, indo para a esquerda e para cima */
+    box-sizing: border-box; /* content-box: é o tamanho co conteudo, border-box: tamanho de uma borda até outra borda, respeitando o limite do width*/
+    /* height: 100px;
+    overflow-y: auto; */  /* hidden: se o conteudo passar, irá esconder, scroll: cria uma barra, mas mostra quando não precisa, -y é na vertical, -x é na horizontal, auto: faz a detecção e coloca só quando é necessário */
+    
+}
+.teste2{
+    background-color: lightcoral; /* o tamanho é a soma de todos os tamanhos, tamanho + borda + margem */
+    width: 500px; /* quando é %, ele se redimenciona com o tamanho da página, tamanho de conteúdo*/
+    border: 2px solid black; /* largura, tipo (inteira) e cor, esse é o tipo resumido */
+    padding: 20px; /* pode usar até 4 valores, da um espaço entre a escrita e a borda*/
+    margin: 10px; /* espaço entre 1 elemento e o outros, eles não se sobrepõem, mas respeita o que tiver maior número */
+    box-sizing: content-box;
+    font-family: 'Times New Roman', Times, serif; /* nome composto precisa de '' */
+    height: 100px;
+    overflow-y: auto
+}
+.teste3{
+    font-family: 'Courier New', Courier, monospace; /* espaço de larguras iguais entre as letras, todas ocupam o mesmo espaço, tipo maquina de escrever, utilizada em códigos também */
+}
+.teste4{
+    font-size: 2em; /* pode ser em pixel (px) ou em (1em = 16px), ele se adapta ao tamanho do pai */
+}
+div{
+    background-color: aquamarine;
+    font-size: 20px; /* esse é o pai do teste 5. Onde ele está anexado */
+}
+
+.teste5{
+    background-color: palevioletred;
+    width: 80%;
+    max-width: 800px; /* tamanho máximo que pode crescer, sem distocer */
+    min-width: none; /* tamanho mínimo que pode diminuir, sem distocer */
+    font-size: 100%; /* pode usar porcentagem (menos utilizado), 1.5 * px do pai */
+}
+.teste6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; /* peso da fonte, espessura. bold, lighter, 100 a 900 */
+    font-style: italic; /* italic, oblique (mais antiga)*/
+}
+.teste7{
+    font-variant: small-caps; /* small-caps: opção de caixa alta e destaca as que realmente são maiuscula*/
+    text-align: left; /* left, right, center, justify (cuidado, utilizado em paragrafos para textos grandes), */
+}
+.teste8{
+    text-transform: uppercase; /*  uppercase: letras maiusculas (geralmente para título), lowercase: letras minusculas,
+    capitalize: primeira letra da palavra fica maiuscula*/
+}
+a{
+    text-decoration: none;
+}
+.teste9{
+    text-decoration: underline dotted palevioletred; /* usado mais para sublinhado, underline: embaixo da palavra, overline: em cima da paralvra, line-through: palavra riscada */ /* dotted, double (o tipo da linha)*/ /* e a cor */
+}
+.teste10{
+    text-shadow: 1px -2px 1px blue; /* distância na horizontal, na vertical, a distorção (nitida ou sombreada) e cor, aceita o negativo, indo para a esquerda e para cima */
+    line-height: 20px; /* altura entre os paragrafos, 18 px é o padrão */
+    letter-spacing: 0px; /* espaçameno entre as letras */
+    word-spacing: 5px; /* espaçamento entre as palavras*/
+    text-indent: 30px; /* indentação do paragrafo */
+}
