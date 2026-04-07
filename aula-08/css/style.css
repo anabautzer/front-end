@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: royalblue;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    padding-bottom: 0px;
+}
+
+header h1{ /* substitui a necessidade direta de definir classe*/
+    margin-bottom: 15px;
+}
+
+nav ul{
+    list-style: none; /* retira os pontos da lista */
+    display: flex; /* alinhamento */
+    justify-content: center;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px; /* fazer assim, o link clicavel fica apenas na palavra, sem adicionar o a */
+}
+
+nav ul li a:hover{
+    background-color: skyblue;
+
+}
+
+/* do maior para menor, do mais geerico para o mais especifico */
+
+section{
+    padding: 20px;
+}
+
+main{
+    display: flex; /* colunas */
+}
+
+.moda_masc, .moda_inf{ /* opção para alterar mais de uma classe */
+    width: 30%;
+}
+
+.moda_fem{
+    width: 40%;
+}
+
+h2{
+    text-align: center;
+    margin: 15px;
+
+}
+
+section p{
+    text-align: justify;
+}
+
+article{
+    border: 1px solid #222;
+    border-radius: 8px;
+    margin: 20px 0px;
+    padding: 15px;
+}
+
+article img{
+    width: 100%; /* respeita o espaço limite */
+}
+
+aside{
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: lightseagreen;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
