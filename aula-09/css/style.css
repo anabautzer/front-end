@@ -1,0 +1,31 @@
+table, th, td{
+    width: 60%;
+    margin: auto; /* espaço que está sobrando e vai dividir para os lados, centralizandos, funciona para elementos do tipo block, por ser a mesma linha */
+    border: 1px solid black;
+    border-collapse: collapse; /* collapse: junta as linhas */
+    padding: 5px;
+}
+
+.teste_linha{
+    background-color: lightcoral;
+}
+
+.coluna2{
+    background-color: lightblue;
+}
+
+thead{
+    background-color: lightseagreen;
+    color: white;
+}
+
+tbody tr:nth-child(even){ /* contra os filhos do elemento, no caso as linhas */
+    background-color: lightcyan;
+
+}
+
+tfoot{
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Exemplo de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <!-- col*3.coluna$ -->
+            <col class="coluna1">
+            <col class="coluna2">
+            <col class="coluna3">
+        </colgroup> <!-- não é um elemento da tabela, é um controle -->
+        <caption>Contatos dos Funcioninários - Paulista</caption> <!-- titulo da tabela -->
+        <thead> <!-- cabeçalho da tabela -->
+            <tr> <!-- linha -->
+                <th>Nome</th> <!-- cabeçalho -->
+                <th>Telefone</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        
+        <tbody> <!-- cuida do corpo da tabela -->
+            <tr>
+                <td>Ana Carolina</td> <!-- conteúdo --> <!-- rowspan mescla as linhas, mas precisa tirar a repetidaq-->
+                <td>(11)00000-0000</td>
+                <td>abroba@lalanja.com.br</td>
+            </tr>
+            <tr class="teste_linha">
+                <td>Ana Carolina</td>
+                <td>(38)00000-0000</td>
+                <td>lalanja@abroba.com.br</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>(51)00000-0000</td>
+                <td>tomate@abroba.com.br</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>(51)00000-0000</td>
+                <td>tomate@abroba.com.br</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>(51)00000-0000</td>
+                <td>tomate@abroba.com.br</td>
+            </tr>
+            <!-- shift + alt + seta para baixo para duplicar -->
+        </tbody>
+
+        <tfoot> <!-- rodapé -->
+            <tr>
+                <td colspan="3">Dados dos funcionarios da Paulista</td> <!-- colspan é para mesclar as colunas -->
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>

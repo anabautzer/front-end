@@ -1,0 +1,9 @@
+table, th, td, tr{
+    width: 600px;
+    margin: auto; /* espaço que está sobrando e vai dividir para os lados, centralizandos, funciona para elementos do tipo block, por ser a mesma linha */
+    border: 1px solid black;
+    padding: 1px;
+}
+caption{
+    font-style: italic;
+}
