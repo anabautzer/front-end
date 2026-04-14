@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro" method="get"> <!-- destino desse formulário, get para pegar uma informação não sigilosa (buscar algo), fica escrito as informações no url, post = encapsular as informações e envia na requisição (informações sigilosas)-->
+        <fieldset>
+            <legend>Dados Pessoais</legend> <!-- título do fieldset -->
+            <label for="idNome">Nome</label> <!-- nome, for = para quem (uso do id)--> 
+            <input type="text" name="nome" id="idNome" placeholder="Nome e Sobrenome" autofocus> <br> <!-- br quebra a linha --> <!-- input para colocar informação, name = rotulo dos dados que estaram dentro do input (não é o nome do input), id = identificação do elemento, placeholder mostra a sugestão, mas não da um valor, autofocus = já mostra a primeira coisa a se fazer -->
+            <label for="idEmail">E-mail</label>
+            <input type="email" name="email" id="idEmail" required> <br> <!-- type="email" ajuda o usuário a entender o campo, verifica se tem um @ dentro do endereço, required é campo obrigatório -->
+            <label for="idSenha">Senha</label>
+            <input type="password" name="senha" id="idSenha" autocomplete="off" maxlength="8"> <!-- faz a senha não aparecer, autocomplete faz tirar, maxlength = tamanho máximo de senha -->
+        </fieldset><!-- divisoria daquele campo -->
+
+        <fieldset>
+            <legend>Outros Campos</legend>
+            <label for="idBusca">Busca</label>
+            <input type="search" name="busca" id="idBusca"> <br> <!-- faz a busca da informação dentro do site -->
+            <label for="idSite">Site</label>
+            <input type="url" name="site" id="idSite"> <br> <!-- tem que colocar o protocolo do site para busca (https://) -->
+            <label for="idTele">Telefone</label>
+            <input type="tel" name="tele" id="idTele"> <br> <!-- para telefone, mas aceita caractere -->
+            <label for="idData">Data</label>
+            <input type="date" name="data" id="idData"> <br> <!-- colocar a data -->
+            <label for="idHora">Hora</label>
+            <input type="time" name="hora" id="idHora"> <br> <!-- colocar a a hora -->
+            <label for="idReuniao">Reunião</label>
+            <input type="datetime-local" name="reuniao" id="idReuniao"> <br> <!-- data e hora juntos -->
+            <label for="idMes">Mês</label>
+            <input type="month" name="mes" id="idMes"> <br> <!-- pega só o mês e anos -->
+            <label for="idSemana">Semanas</label>
+            <input type="week" name="semana" id="idSemana"> <br> <!-- mostra a semana do ano -->
+            <label for="idQuant">Quantidade</label>
+            <input type="number" name="quant" id="idQuant" step="5" min="0" max="50"> <br> <!-- número inteiros, step é a referencia do número (1 em 1, 2 em 2), com minimo e máximo de números -->
+            <label for="idTamanho">Tamanho</label>
+            <input type="range" name="tamanho" id="idTamanho" step="10" min="0" max="50"> <!-- barra para pegar o valor -->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Manequim</legend>
+            <input type="radio" name="tam-roupa" id="idP" value="peq"> <!-- tipos de escolhas, value é o valor que será enviado --> <label for="idP">Pequeno</label>
+            <input type="radio" name="tam-roupa" id="idM" value="med"> <label for="idM">Médio</label>
+            <input type="radio" name="tam-roupa" id="idG" value="grd"> <label for="idG">Grande</label> <!-- name precisa ser igual para poder selecionar apenas um -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Cores</legend>
+            <input type="checkbox" name="cores" id="idAzul" value="azul"> <!-- parecido com a estrtura do radio, mas aceita de uma opção e o formato é quadrado --> <label for="idAzul">Azul</label> <br>
+            <input type="checkbox" name="cores" id="idVermelho" value="vermelho"> <label for="idVermelho">Vermelho</label> <br>
+            <input type="checkbox" name="cores" id="idVerde" value="verde"> <label for="idVerde">Verde</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Modelos</legend>
+            <label for="idObs">Observação</label> 
+            <textarea name="obs" id="idObs"></textarea> <br> <!-- bloco de texto dentro do formulário -->
+            <label for="idEstilo">Estilos</label>
+            <select name="estilo" id="idEstilo"> <!-- campo de selecionar e as opções -->
+                <option value="" disabled selected>Escolha o tipo</option> <!-- mostra um opção que não pode selecionar -->
+                <optgroup label="Clássicos">
+                    <option value="5001">Esporte</option>
+                    <option value="5002">Social</option>
+                    <option value="5003">Casual</option> <!-- value para atribuir local/valor (importante) -->
+                </optgroup>
+                <optgroup label="Especiais">
+                    <option value="5004">Rock</option>
+                    <option value="5005">Indie</option>
+                    <option value="5006">Emo</option>
+
+                </optgroup>
+            </select>
+        </fieldset>
+        
+        <input type="submit" value="Enviar"> <!-- o value é o nome do botão -->
+
+        
+
+    </form>
+
+    
+</body>
+</html>
