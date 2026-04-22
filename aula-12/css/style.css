@@ -1,0 +1,49 @@
+*{
+    /* boas práticas */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 5px;
+    display: grid; /* precisa vir no container pai para iniciar o processo */
+    grid-template-columns: repeat(3, 1fr); /* quantas colunas e larguras, repeat para repetir, minmax é valor minimo e máximo */
+    column-gap: 10px; /* espaçamentos entre os elementos da coluna, fr é fração da tela */
+    row-gap: 10px; /* espçameno entre as linhas */
+    /* pode usar só gap: 10px que irá atender ambos */
+    grid-template-rows: 150px 150px 150px; /* utilizada em conteudo dinamico */
+    /* grid-auto-rows: 150px; faz a mesma coisa que a de cima */
+    /* align-items: center;
+    justify-items: center; */
+}
+
+.item1{ /* cabeçalho */
+    /* align-self: center;
+    justify-self: center; */
+    grid-column: 1/4; /* colunas que ele irá ocupar */
+    grid-row: 1/2; /* linhas que ele irá ocupar */
+}
+
+.item2{ /* texto */
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.item5{ /* texto */
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+.item9{ /* rodapé */
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
+
+.item{
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 5px;
+}
