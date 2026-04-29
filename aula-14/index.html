@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- DOM - funciona como se fosse uma árvore, pegado os elementos -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script> <!-- defer é importante -->
+</head>
+<body>
+    <h1 id="titulo">Introdução a Javascript</h1>
+    <label for="">Texto</label>
+    <input type="text" name="" id="texto">
+    <button onclick="mudar()">Texto do Título</button>
+
+
+    <p class="noticia">lorem 1</p>
+    <p class="noticia">lorem 2</p>
+    <p class="noticia">lorem 3</p>
+
+    <h2>Exemplo de classe</h2>
+
+    <p>Primeiro: <span class="corredor"></span></p>
+    <p>Segundo: <span class="corredor"></span></p>
+    <p>Terceiro: <span class="corredor"></span></p>
+
+    <label for="">Novo Classificado</label>
+    <input type="text" id="novo">
+    <label for="">Posição</label>
+    <input type="number" name="" id="posicao" min="1" max="3">
+    <button onclick="inserir()">Inserir</button>
+
+    <script> // ajuda a testar uma funcionalidde temporária
+        function inserir(){
+            let novo = document.getElementById('novo').value
+            let posicao = document.getElementById('posicao').value -1 // para mostrar onde deve começar, já que começa no 1 e o index do array é no 0
+            document.getElementsByClassName('corredor')[posicao].innerHTML = novo
+        }
+    </script>
+
+    <h2>Exemplo do TagName</h2>
+    <ul>
+        <li>Janeiro</li>
+        <li>Fevereiro</li>
+        <li>Março</li>
+        <li>Abril</li>
+        <li>Maio</li>
+    </ul>
+
+    <label for="">Escolha um mês</label>
+    <input type="number" id="numero" min="1" max="5">
+    <button onclick="mostrar()">Mostrar</button>
+    <p>Mês escolhido: <span id="resultado"></span></p>
+
+    <script>
+        function mostrar(){
+            let num = document.getElementById('numero').value -1
+            let mes = document.getElementsByTagName('li')[num].innerHTML // pela tag do elemento
+            document.getElementById('resultado').innerHTML = mes
+        }
+    </script>
+
+<label for="">Cor</label>
+<input type="color" name="" id="idcolor">
+<button onclick="mudarCor()">Mudar</button>
+<div class="caixa">
+    Aqui muda a cor
+</div>
+
+<script>
+    function mudarCor(){
+        let cor = document.getElementById('idcolor').value
+        document.getElementsByClassName('caixa')[0].style.backgroundColor = cor // por ser array, tem que colocar a posição inicial
+    }
+</script>
+</body>
+</html>
