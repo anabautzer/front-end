@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação Regex</title>
+</head>
+<body>
+    <label for="">E-mail</label>
+    <input type="email" name="" id="email">
+    <button id="btn">Enviar</button>
+
+    <script>
+        const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+
+        document.querySelector('#btn').addEventListener('click', enviar)
+
+        function enviar(){
+            const emailDigitado = document.querySelector('#email').value
+            if(emailRegex.test(emailDigitado)){
+                console.log("E-mail válido! Pode seguir!");                
+            }else{
+                console.log("Opa, esse e-mail parece estar imcompleto!");     
+            }
+        }
+    </script>
+</body>
+</html>

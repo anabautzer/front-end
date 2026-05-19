@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos 2</title>
+    <script src="js/evento.js" defer></script>
+</head>
+<body>
+    <h1>Eventos Javascript</h1>
+
+    <form action="#" method="get">
+        <label for="idnome">Nome</label>
+        <input type="text" name="nome" id="idnome"><br>
+        <label for="barra">Escala</label>
+        <input type="range" name="escala" id="barra"> <!-- colocar a quantidade -->
+        <span id="valor">50</span><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <span id="acao"></span>
+
+    <br><hr><br>
+    <dialog id="modalCafe">
+        <h2>Confirmar</h2>
+        <p>Você está efetuando o pedido</p>
+        <p>Deseja confirmar?</p>
+        <form method="dialog"> <!-- método especifico, não irá retornar algo, por isso não tem get, apenas dialogo -->
+            <button value="cancelar">Desistir</button>
+            <button value="confirmar">Confirmar</button>
+        </form>
+    </dialog>
+
+    <button id="abrirModal">Finalizar Compra</button>
+
+    <p>Resultado: <span id="status"></span></p>
+</body>
+</html>
